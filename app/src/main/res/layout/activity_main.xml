@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <Button
+        android:id="@+id/button18"
+        android:layout_width="253dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Guardar"
+        app:layout_constraintEnd_toEndOf="@+id/textFieldEdad"
+        app:layout_constraintStart_toStartOf="@+id/textFieldEdad"
+        app:layout_constraintTop_toBottomOf="@+id/textFieldEdad" />
+
+    <View
+        android:layout_width="253dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="8dp"
+        android:background="@android:color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView8" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textFieldEdad"
+        android:layout_width="253dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="16dp"
+        android:hint="Edad"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textFieldCorreo">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextEdad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textFieldCorreo"
+        android:layout_width="253dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="16dp"
+        android:hint="Correo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textFieldDni">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextCorreo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textFieldDni"
+        android:layout_width="253dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="16dp"
+        android:hint="Dni"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textFieldApellido">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextDni"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textFieldApellido"
+        android:layout_width="253dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="16dp"
+        android:hint="Apellido"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textFieldNombre">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextApellido"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="#546E7A" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textFieldNombre"
+        android:layout_width="253dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="16dp"
+        android:hint="Nombre"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView8">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextNombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Registro de usuario"
+        android:textSize="26sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textFieldBuscar"
+        android:layout_width="253dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="16dp"
+        android:hint="Buscar Usuario"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/button18">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextBuscar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Buscar"
+        app:layout_constraintEnd_toEndOf="@+id/textFieldBuscar"
+        app:layout_constraintStart_toStartOf="@+id/textFieldBuscar"
+        app:layout_constraintTop_toBottomOf="@+id/textFieldBuscar" />
+
+    <Button
+        android:id="@+id/buttonLogout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="LOGOUT"
+        app:layout_constraintEnd_toEndOf="@+id/button"
+        app:layout_constraintStart_toStartOf="@+id/button"
+        app:layout_constraintTop_toBottomOf="@+id/button" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonLogout"
+        app:layout_constraintStart_toEndOf="@+id/buttonLogout"
+        app:layout_constraintTop_toTopOf="@+id/buttonLogout" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
